@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de sockets</title>
+</head>
+<body>
+    <center>
+        <h3>Prueba de sockets para emision de eventos en tiempo real</h3>
+        <input id="usuario" type="text" placeholder="Usuario">
+        <br>
+        <br>
+        <textarea id="textMessage" cols="30" rows="10"  onkeyup="pulsarFunction(event)"></textarea>
+        <br><br>
+        <button onclick="sendMessage()">Enviar</button>
+
+        <div id="timeLine"></div>
+    </center>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/logic.js"></script>
+</body>
+</html>
